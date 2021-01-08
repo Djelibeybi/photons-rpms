@@ -1,0 +1,12 @@
+interactor:
+    # The server has no authentication, so it's highly recommended that you
+    # host it behind a VPN or firewall
+    host: 0.0.0.0
+
+    # The port used by the server
+    port: 6100
+
+    database:
+      # Scenes use a sqlite3 database and one will be created when the server
+      # starts up if one does not already exist
+      uri: "/var/lib/photons/interactor.db"

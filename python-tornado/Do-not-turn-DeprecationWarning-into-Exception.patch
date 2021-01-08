@@ -1,0 +1,11 @@
+diff -Nur tornado-6.0.4/tornado/test/runtests.py tornado-6.0.4-new/tornado/test/runtests.py
+--- tornado-6.0.4/tornado/test/runtests.py	2020-03-02 20:21:37.000000000 +0100
++++ tornado-6.0.4-new/tornado/test/runtests.py	2020-09-14 09:21:31.818678680 +0200
+@@ -126,7 +126,6 @@
+     # Tornado generally shouldn't use anything deprecated, but some of
+     # our dependencies do (last match wins).
+     warnings.filterwarnings("ignore", category=DeprecationWarning)
+-    warnings.filterwarnings("error", category=DeprecationWarning, module=r"tornado\..*")
+     warnings.filterwarnings("ignore", category=PendingDeprecationWarning)
+     warnings.filterwarnings(
+         "error", category=PendingDeprecationWarning, module=r"tornado\..*"

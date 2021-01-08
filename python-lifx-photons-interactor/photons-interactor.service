@@ -1,0 +1,15 @@
+[Unit]
+Description=A server for interacting with LIFX lights over the LAN
+Documentation=https://photons.delfick.com
+After=network.target
+
+[Service]
+User=photons
+Environment=PYTHONUNBUFFERED=1
+Environment=LIFX_CONFIG=/etc/photons/interactor.yml
+ExecStart=/usr/bin/lifx lan:interactor
+KillMode=process
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

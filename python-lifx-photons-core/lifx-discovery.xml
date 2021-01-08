@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+  <short>LIFX discovery</short>
+  <description>The LIFX discovery protocol uses UDP broadcasts to discover LIFX devices on the local network.</description>
+  <source-port port="56700" protocol="udp"/>
+</service>
